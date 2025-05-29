@@ -54,5 +54,11 @@ class quiz:
                 if user_answer not in ["a", "b", "c", "d"]:
                     print("Invalid input. Please enter a, b, c, or d.")
                     continue
+
+            if question.check_answer(user_answer):
+                print("Correct!")
+            else:
+                correct_option = question.options[question.correct_answer]
+                print(f"Incorrect. The correct answer is {question.correct_answer}) {correct_option}.")
                                     
         
