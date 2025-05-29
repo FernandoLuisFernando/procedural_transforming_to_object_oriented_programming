@@ -33,6 +33,11 @@ class questions:
                 option_c = input("Enter option C: ")
                 option_d = input("Enter option D: ")
 
+                correct_answer = ""
+                while correct_answer not in ["a", "b", "c", "d"]:
+                    correct_answer = input("Enter the correct answer (a,b,c,d)").lower()
+                    if correct_answer not in ["a", "b", "c", "d"]:
+                        print("Invalid input. Please enter a, b, c, or d.")
                 
 
 
