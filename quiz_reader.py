@@ -47,5 +47,12 @@ class quiz:
         for idx, question in enumerate(selected_questions, start=1):
             print(f"\nQuestion {idx}")
             question.display()
-            
+
+            user_answer = "" 
+            while user_answer not in ["a", "b", "c", "d"]
+                user_answer = input("enter your answer (a/b/c/d): ").lower()
+                if user_answer not in ["a", "b", "c", "d"]:
+                    print("Invalid input. Please enter a, b, c, or d.")
+                    continue
+                                    
         
