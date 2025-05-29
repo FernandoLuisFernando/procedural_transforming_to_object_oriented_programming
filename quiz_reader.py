@@ -44,4 +44,8 @@ class quiz:
     def start_quiz(self):
         selected_questions = random.sample(self.questions, min(3, len (self.questions)))
 
+        for idx, question in enumerate(selected_questions, start=1):
+            print(f"\nQuestion {idx}")
+            question.display()
+            
         
