@@ -60,5 +60,9 @@ class quiz:
             else:
                 correct_option = question.options[question.correct_answer]
                 print(f"Incorrect. The correct answer is {question.correct_answer}) {correct_option}.")
+
+quiz = Quiz("questions.txt")
+quiz.load_questions()
+quiz.play()
                                     
         
