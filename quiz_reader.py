@@ -24,7 +24,7 @@ class questions:
         def add_question(self, question):
             self.question.append(question)
 
-        def craete_questions(self):
+        def create_questions(self):
             for questions in range(1, 4):
                 print(f"\n--- Question {questions} ---")
                 text = input("Enter the question text: ")
