@@ -17,27 +17,27 @@ class questions:
                 f"Correct An swer: {self.correct_answer}\n"
                 "---\n ")
     
-    class quiz:
-        def __init__(self):
-            self.questions = []
+class quiz:
+    def __init__(self):
+        self.questions = []
 
-        def add_question(self, question):
-            self.question.append(question)
+    def add_question(self, question):
+        self.question.append(question)
 
-        def create_questions(self):
-            for questions in range(1, 4):
-                print(f"\n--- Question {questions} ---")
-                text = input("Enter the question text: ")
-                option_a = input("Enter option A: ")
-                option_b = input("Enter option B: ")
-                option_c = input("Enter option C: ")
-                option_d = input("Enter option D: ")
+    def create_questions(self):
+        for questions in range(1, 4):
+            print(f"\n--- Question {questions} ---")
+            text = input("Enter the question text: ")
+            option_a = input("Enter option A: ")
+            option_b = input("Enter option B: ")
+            option_c = input("Enter option C: ")
+            option_d = input("Enter option D: ")
 
-                correct_answer = ""
-                while correct_answer not in ["a", "b", "c", "d"]:
-                    correct_answer = input("Enter the correct answer (a,b,c,d)").lower()
-                    if correct_answer not in ["a", "b", "c", "d"]:
-                        print("Invalid input. Please enter a, b, c, or d.")
+            correct_answer = ""
+            while correct_answer not in ["a", "b", "c", "d"]:
+                correct_answer = input("Enter the correct answer (a,b,c,d)").lower()
+                if correct_answer not in ["a", "b", "c", "d"]:
+                    print("Invalid input. Please enter a, b, c, or d.")
                 
                 q = questions(questions, text, option_a, option_b, option_c, option_d, correct_answer)
                 self.add_questions(q)
@@ -48,7 +48,9 @@ class questions:
                         file.write(question.format())  
                 print(f"Quiz saved to {filename}")
 
-
+quiz_final = quiz()
+quiz.craete_questions()
+quiz_final.save_files("quiz.txt")
    
 
              
