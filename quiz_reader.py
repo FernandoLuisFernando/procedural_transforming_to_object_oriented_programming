@@ -9,14 +9,14 @@ class questions:
         self.answer = correct_answer
 
     def format(self):
-        return (f"question {self.number]: {self.text}"\n")
-                self.number = number 
-                self.text = text 
-                self.option_a = option_a 
-                self.option_b = option_b 
-                self.option_c = option_c 
-                self.option_d = option_d 
-                self.correct_answer = correct_answer
+        return (f"question {self.number}: {self.text}\n"
+                f"a) {self.option_a}\n"
+                f"b) {self.option_b}\n"
+                f"c) {self.option_c}\n"
+                f"d) {self.option_d}\n"            
+                f"Correct An swer: {self.correct_answer}\n"
+                "---\n ")
+
    
 
              
