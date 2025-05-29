@@ -1,0 +1,22 @@
+question <class '__main__.questions'>: a
+a) a
+b) a
+c) a
+d) a
+Correct Answer: a
+---
+ question <class '__main__.questions'>: a
+a) a
+b) a
+c) a
+d) a
+Correct Answer: a
+---
+ question <class '__main__.questions'>: a
+a) a
+b) a
+c) a
+d) a
+Correct Answer: a
+---
+ 

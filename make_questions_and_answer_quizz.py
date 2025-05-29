@@ -37,7 +37,7 @@ class Quiz:
             while correct_answer not in ["a", "b", "c", "d"]:
                 correct_answer = input("Enter the correct answer: (a,b,c,d)").lower()
                 if correct_answer not in ["a", "b", "c", "d"]:
-                    print("Invalid input. Please enter a, b, c, or d.")
+                    print("Invalid input. Please enter a, b, c, or d: ")
                 
             final = questions(questions, text, option_a, option_b, option_c, option_d, correct_answer)
             self.add_question(final)
