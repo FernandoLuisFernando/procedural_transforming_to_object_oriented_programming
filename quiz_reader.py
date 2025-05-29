@@ -42,7 +42,12 @@ class questions:
                 q = questions(questions, text, option_a, option_b, option_c, option_d, correct_answer)
                 self.add_questions(q)
 
-           
+        def save_files(self, filename):
+                with open(filename, 'w') as file:
+                    for question in self.questions:
+                        file.write(question.format())  
+                print(f"Quiz saved to {filename}")
+
 
    
 
