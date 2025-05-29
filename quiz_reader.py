@@ -39,7 +39,10 @@ class questions:
                     if correct_answer not in ["a", "b", "c", "d"]:
                         print("Invalid input. Please enter a, b, c, or d.")
                 
+                q = questions(questions, text, option_a, option_b, option_c, option_d, correct_answer)
+                self.add_questions(q)
 
+           
 
    
 
