@@ -24,6 +24,18 @@ class questions:
         def add_question(self, question):
             self.question.append(question)
 
+        def craete_questions(self):
+            for questions in range(1, 4):
+                print(f"\n--- Question {questions} ---")
+                text = input("Enter the question text: ")
+                option_a = input("Enter option A: ")
+                option_b = input("Enter option B: ")
+                option_c = input("Enter option C: ")
+                option_d = input("Enter option D: ")
+
+                
+
+
    
 
              
