@@ -36,4 +36,12 @@ class quiz:
             option_c = lines[3][3:].strip()
             option_d = lines[4][3:].strip()
             correct_answer = lines[5].split(':')[1].strip()
-                  
+
+            options = = {"a": option_a, "b": option_b, "c": option_c, "d": option_d}
+            question = Question(q_text, options, correct_answer)
+            self.questions.append(question)
+
+    def start_quiz(self):
+        selected_questions = random.sample(self.questions, min(3, len (self.questions)))
+
+        
