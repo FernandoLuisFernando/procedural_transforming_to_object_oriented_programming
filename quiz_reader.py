@@ -16,6 +16,13 @@ class questions:
                 f"d) {self.option_d}\n"            
                 f"Correct An swer: {self.correct_answer}\n"
                 "---\n ")
+    
+    class quiz:
+        def __init__(self):
+            self.questions = []
+
+        def add_question(self, question):
+            self.question.append(question)
 
    
 
