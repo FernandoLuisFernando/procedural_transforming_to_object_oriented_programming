@@ -30,4 +30,9 @@ class quiz:
             if len(lines) < 6:
                 continue
 
-            q_text = lines[]        
+            q_text = lines[0].split(':')[1].strip()  
+            option_a = lines[1][3:].strip()
+            option_b = lines[2][3:].strip()
+            option_c = lines[3][3:].strip()
+            option_d = lines[4][3:].strip()
+                  
