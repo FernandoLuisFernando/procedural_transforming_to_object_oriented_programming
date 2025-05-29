@@ -13,4 +13,21 @@ class question:
 
     def check_answer(self, user_answer):
         return user_answer == self.correct_answer
-      
+    
+class quiz:
+    def __init__(self, filename):
+        self.filename = filename
+        self.questions = []
+
+    def load_questions(self): 
+        with open(self.filename, "r") as file:
+            content = file.read()
+
+        blocks = content.strip().split("---\n")
+
+        for block in blocks:
+            lines = block.strip().split("\n")
+            if len(lines) < 6:
+                continue
+
+            q_text = lines[]        
